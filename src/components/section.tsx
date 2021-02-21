@@ -30,8 +30,4 @@ const Section = ({
   </div>
 )
 
-Section.defaultProps = {
-  isGrid: false
-}
-
 export default Section

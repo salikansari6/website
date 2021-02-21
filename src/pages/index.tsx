@@ -26,30 +26,33 @@ const IndexPage = ({ data }: IndexProps) => (
         />
         <Section
           className="mb-10 md:mb-16"
-          title="Tech Stack"
-          isGrid={true}
-          subSections={data.site.siteMetadata.techStack}
+          title={data.site.siteMetadata.techStack.title}
+          isGrid={data.site.siteMetadata.techStack.isGrid}
+          subSections={data.site.siteMetadata.techStack.subSections}
         />
         <Section
           className="mb-10 md:md-16"
-          title="Our approach to building Products"
-          subSections={data.site.siteMetadata.productApproach}
+          title={data.site.siteMetadata.productApproach.title}
+          isGrid={data.site.siteMetadata.productApproach.isGrid}
+          subSections={data.site.siteMetadata.productApproach.subSections}
         />
         <Section
           className="mb-10 md:md-16"
-          title="Our approach to building Teams"
-          subSections={data.site.siteMetadata.teamApproach}
+          title={data.site.siteMetadata.teamApproach.title}
+          isGrid={data.site.siteMetadata.teamApproach.isGrid}
+          subSections={data.site.siteMetadata.teamApproach.subSections}
         />
         <Section
           className="mb-10 md:mb-16"
-          title="Expertise"
-          isGrid={true}
-          subSections={data.site.siteMetadata.expertise}
+          title={data.site.siteMetadata.expertise.title}
+          isGrid={data.site.siteMetadata.expertise.isGrid}
+          subSections={data.site.siteMetadata.expertise.subSections}
         />
         <Section
           className="mb-10 md:md-16"
-          title="Engagement"
-          subSections={data.site.siteMetadata.engagement}
+          title={data.site.siteMetadata.engagement.title}
+          isGrid={data.site.siteMetadata.engagement.isGrid}
+          subSections={data.site.siteMetadata.engagement.subSections}
         />
       </div>
     </main>
@@ -75,23 +78,43 @@ export const query = graphql`
         }
         techStack {
           title
-          description
+          isGrid
+          subSections {
+            title
+            description
+          }
         }
         productApproach {
           title
-          description
+          isGrid
+          subSections {
+            title
+            description
+          }
         }
         teamApproach {
           title
-          description
+          isGrid
+          subSections {
+            title
+            description
+          }
         }
         expertise {
           title
-          description
+          isGrid
+          subSections {
+            title
+            description
+          }
         }
         engagement {
           title
-          description
+          isGrid
+          subSections {
+            title
+            description
+          }
         }
       }
     }

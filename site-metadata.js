@@ -29,7 +29,7 @@ exports.siteMetaData = {
         'Express (Javascript / Typescript)',
         'Spring Boot (Java / Kotlin)',
         'GoLang',
-        '~Laravel (PHP)~ only for legacy integrations'
+        'Laravel (PHP) - only for legacy integrations'
       ]
     },
     {

@@ -13,7 +13,7 @@ interface IndexProps {
 const IndexPage = ({ data }: IndexProps) => (
   <div className="flex flex-col bg-gray-50 h-full justify-between pt-16 md:pt-24">
     <main>
-      <title>Procedure</title>
+      <title>{data.site.siteMetadata.title}</title>
       <div className="container">
         <Header
           className="mb-10 md:md-16"
@@ -58,7 +58,7 @@ const IndexPage = ({ data }: IndexProps) => (
     </main>
     <footer>
       <div className="container">
-        <Footer />
+        <Footer footer={data.site.siteMetadata.footer} />
       </div>
     </footer>
   </div>
@@ -116,6 +116,7 @@ export const query = graphql`
             description
           }
         }
+        footer
       }
     }
   }

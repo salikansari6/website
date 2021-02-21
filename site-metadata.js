@@ -195,5 +195,6 @@ exports.siteMetaData = {
         ]
       }
     ]
-  }
+  },
+  footer: 'Copyright 2021 | Procedure Technologies Pvt. Ltd.'
 }

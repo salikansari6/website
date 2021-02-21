@@ -1,10 +1,14 @@
 import React from 'react'
 import { IntrinsicProps } from '../shared/classes'
 
-const Footer = ({ className }: IntrinsicProps) => (
+interface FooterProps {
+  footer: string
+}
+
+const Footer = ({ className, footer }: IntrinsicProps & FooterProps) => (
   <div className={className}>
     <p className="text-gray-400 font-semibold">
-      Copyright 2021 | Procedure Technologies Pvt. Ltd.
+      {footer}
     </p>
   </div>
 )

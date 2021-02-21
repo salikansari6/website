@@ -18,12 +18,12 @@ const Section = ({
     <h4 className="text-lg md:text-2xl font-semibold text-purple-500 mb-2 md:mb-4">
       {title}
     </h4>
-    <div className={`${isGrid ? 'md:grid md:grid-cols-2 md:gap-0' : ''}`}>
+    <div className={`${isGrid ? 'md:grid md:grid-cols-2 md:gap-2' : ''}`}>
       {subSections.map(({ title, description }: SubSectionProps) => (
         <SubSection
           title={title}
           description={description}
-          className="w-full md:w-1/2 mb-2 md:mb-4"
+          className="mb-2 md:mb-4"
         />
       ))}
     </div>

@@ -1,0 +1,37 @@
+import React from 'react'
+import { IntrinsicProps, SubSectionProps } from '../shared/classes'
+import SubSection from './sub-section'
+
+interface SectionProps {
+  title: string
+  isGrid: boolean
+  subSections: SubSectionProps[]
+}
+
+const Section = ({
+  title,
+  subSections,
+  className,
+  isGrid
+}: SectionProps & IntrinsicProps) => (
+  <div className={className}>
+    <h4 className="text-lg md:text-2xl font-semibold text-purple-500 mb-2 md:mb-4">
+      {title}
+    </h4>
+    <div className={`${isGrid ? 'md:grid md:grid-cols-2 md:gap-4' : 'w-full'}`}>
+      {subSections.map(({ title, description }: SubSectionProps) => (
+        <SubSection
+          title={title}
+          description={description}
+          className="w-full md:w-1/2 mb-2 md:mb-4"
+        />
+      ))}
+    </div>
+  </div>
+)
+
+Section.defaultProps = {
+  isGrid: false
+}
+
+export default Section

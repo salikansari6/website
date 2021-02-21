@@ -3,27 +3,27 @@ exports.siteMetaData = {
   description: 'class OurTeam extends YourTeam',
   keyMembers: [
     {
-      name: 'Ulhas Mandrawadkar',
-      title: 'CTO',
-      role: 'Leads the hiring, engineering and training effort',
+      name: '👱🏻‍♂️ Ulhas Mandrawadkar',
+      title: '💼 CTO',
+      role: '🛠️ Leads the hiring, engineering effort',
       url: 'https://twitter.com/ulhas_sm'
     },
     {
-      name: 'Brajkishor Baheti',
-      title: 'CEO',
-      role: 'Leads the product mangement practices',
+      name: '👱🏻‍♂️ Brajkishor Baheti',
+      title: '💼 CEO',
+      role: '🛠️ Leads the product management practices',
       url: 'https://twitter.com/BrajkishorB'
     },
     {
-      name: 'Yugandhar Bhamare',
-      title: 'Design Head',
-      role: 'Leads all things design',
+      name: '👱🏻‍♂️ Yugandhar Bhamare',
+      title: '💼 Design Head',
+      role: '🛠️ Leads all things design',
       url: 'https://twitter.com/yug_design'
     }
   ],
   techStack: [
     {
-      title: 'Backend / API',
+      title: '🧩 Backend / API',
       description: [
         'Django / Flask (Python)',
         'Express (Javascript / Typescript)',
@@ -33,7 +33,7 @@ exports.siteMetaData = {
       ]
     },
     {
-      title: 'Frontend',
+      title: '🕸️ Frontend',
       description: [
         'React (Javascript / Typescript)',
         'Angular (Javascript / Typescript)',
@@ -41,7 +41,7 @@ exports.siteMetaData = {
       ]
     },
     {
-      title: 'Mobile',
+      title: '📱 Mobile',
       description: [
         'React Native (Javascript / Typescript)',
         'Flutter (Dart)',
@@ -50,7 +50,7 @@ exports.siteMetaData = {
       ]
     },
     {
-      title: 'Infra',
+      title: '⚙️ Infra',
       description: [
         'IAAC (Terraform / Pulumi)',
         'AWS',

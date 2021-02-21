@@ -17,10 +17,10 @@ const Member = ({
 }: Person & IntrinsicProps) => (
   <div className={className}>
     <p className="text-base md:text-lg text-gray-800 font-semibold">
-      <a href={url}>👱🏻‍♂️ {name}</a>
+      <a href={url}>{name}</a>
     </p>
-    <p>💼 {title}</p>
-    <p>🛠️ {role}</p>
+    <p>{title}</p>
+    <p>{role}</p>
   </div>
 )
 

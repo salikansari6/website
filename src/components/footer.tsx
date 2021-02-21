@@ -3,7 +3,9 @@ import { IntrinsicProps } from '../shared/classes'
 
 const Footer = ({ className }: IntrinsicProps) => (
   <div className={className}>
-    <p>Copyright 2021 | Procedure Technologies Pvt. Ltd.</p>
+    <p className="text-gray-400 font-semibold">
+      Copyright 2021 | Procedure Technologies Pvt. Ltd.
+    </p>
   </div>
 )
 

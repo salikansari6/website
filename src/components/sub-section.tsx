@@ -1,5 +1,10 @@
 import React from 'react'
-import { IntrinsicProps, SubSectionProps } from '../shared/classes'
+import { IntrinsicProps } from '../shared/classes'
+
+export interface SubSectionProps {
+  title?: string
+  description: string[]
+}
 
 const SubSection = ({
   title,

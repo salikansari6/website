@@ -1,6 +1,6 @@
 import React from 'react'
-import { IntrinsicProps, SubSectionProps } from '../shared/classes'
-import SubSection from './sub-section'
+import { IntrinsicProps } from '../shared/classes'
+import SubSection, { SubSectionProps } from './sub-section'
 
 interface SectionProps {
   title: string
@@ -18,7 +18,7 @@ const Section = ({
     <h4 className="text-lg md:text-2xl font-semibold text-purple-500 mb-2 md:mb-4">
       {title}
     </h4>
-    <div className={`${isGrid ? 'md:grid md:grid-cols-2 md:gap-0' : 'w-full'}`}>
+    <div className={`${isGrid ? 'md:grid md:grid-cols-2 md:gap-0' : ''}`}>
       {subSections.map(({ title, description }: SubSectionProps) => (
         <SubSection
           title={title}

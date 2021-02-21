@@ -18,6 +18,14 @@ module.exports = {
         head: true,
         cookieDomain: 'procedure.tech'
       }
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        tailwind: true,
+        develop: true
+      }
     }
   ]
 }

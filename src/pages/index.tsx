@@ -48,7 +48,7 @@ const IndexPage = ({ data }: IndexProps) => (
         />
         <Section
           className="mb-10 md:md-16"
-          title="Enagement"
+          title="Engagement"
           subSections={data.site.siteMetadata.engagement}
         />
       </div>

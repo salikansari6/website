@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import KeyMembers from '../components/key-members'
-import Section from '../components/section'
+import Section, { SectionProps } from '../components/section'
 
 interface IndexProps {
   data: any
@@ -24,36 +24,16 @@ const IndexPage = ({ data }: IndexProps) => (
           className="md:flex mb-10 md:mb-16"
           keyMembers={data.site.siteMetadata.keyMembers}
         />
-        <Section
-          className="mb-10 md:mb-16"
-          title={data.site.siteMetadata.techStack.title}
-          isGrid={data.site.siteMetadata.techStack.isGrid}
-          subSections={data.site.siteMetadata.techStack.subSections}
-        />
-        <Section
-          className="mb-10 md:md-16"
-          title={data.site.siteMetadata.productApproach.title}
-          isGrid={data.site.siteMetadata.productApproach.isGrid}
-          subSections={data.site.siteMetadata.productApproach.subSections}
-        />
-        <Section
-          className="mb-10 md:md-16"
-          title={data.site.siteMetadata.teamApproach.title}
-          isGrid={data.site.siteMetadata.teamApproach.isGrid}
-          subSections={data.site.siteMetadata.teamApproach.subSections}
-        />
-        <Section
-          className="mb-10 md:mb-16"
-          title={data.site.siteMetadata.expertise.title}
-          isGrid={data.site.siteMetadata.expertise.isGrid}
-          subSections={data.site.siteMetadata.expertise.subSections}
-        />
-        <Section
-          className="mb-10 md:md-16"
-          title={data.site.siteMetadata.engagement.title}
-          isGrid={data.site.siteMetadata.engagement.isGrid}
-          subSections={data.site.siteMetadata.engagement.subSections}
-        />
+        {data.site.siteMetadata.sections.map(
+          ({ title, isGrid, subSections }: SectionProps) => (
+            <Section
+              className="mb-10 md:mb-16"
+              title={title}
+              isGrid={isGrid}
+              subSections={subSections}
+            />
+          )
+        )}
       </div>
     </main>
     <footer>
@@ -76,39 +56,7 @@ export const query = graphql`
           role
           url
         }
-        techStack {
-          title
-          isGrid
-          subSections {
-            title
-            description
-          }
-        }
-        productApproach {
-          title
-          isGrid
-          subSections {
-            title
-            description
-          }
-        }
-        teamApproach {
-          title
-          isGrid
-          subSections {
-            title
-            description
-          }
-        }
-        expertise {
-          title
-          isGrid
-          subSections {
-            title
-            description
-          }
-        }
-        engagement {
+        sections {
           title
           isGrid
           subSections {

@@ -10,6 +10,14 @@ module.exports = {
       options: {
         appId: 'h24e4kpuyms4'
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-112638181-1',
+        head: true,
+        cookieDomain: 'procedure.tech'
+      }
     }
   ]
 }

@@ -1,48 +1,23 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Procedure Website
 
-## 🚀 Quick start
+Welcome to the repository for the website of procedure.tech. The project uses GatsbyJS and TailwindCSS for the markup and styling. It's deployed using AWS Amplify.
 
-1.  **Create a Gatsby site.**
+#### How to start developing
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+---
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+1. Make sure you have gatsby installed globally
+   `npm install -g gatsby-cli`
+2. Install the dependencies
+   `yarn install`
+3. Start the local development server
+   `gatsby develop`
 
-2.  **Start developing.**
+#### How to contribute
 
-    Navigate into your new site’s directory and start it up.
+1. Make a `feature` branch from `main` branch
+2. Make the changes. Test it locally
+3. Raise the PR against `main` branch
+4. Once approved and merged, it will be deployed
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+If you find any mistakes or typos, raise an issue.

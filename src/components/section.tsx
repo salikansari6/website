@@ -2,7 +2,7 @@ import React from 'react'
 import { IntrinsicProps } from '../shared/classes'
 import SubSection, { SubSectionProps } from './sub-section'
 
-interface SectionProps {
+export interface SectionProps {
   title: string
   isGrid: boolean
   subSections: SubSectionProps[]

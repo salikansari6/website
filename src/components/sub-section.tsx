@@ -2,7 +2,7 @@ import React from 'react'
 import { IntrinsicProps } from '../shared/classes'
 
 export interface SubSectionProps {
-  title?: string
+  title: string
   description: string[]
 }
 

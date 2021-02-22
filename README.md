@@ -4,8 +4,6 @@ Welcome to the repository for the website of procedure.tech. The project uses Ga
 
 #### How to start developing
 
----
-
 1. Make sure you have gatsby installed globally
    `npm install -g gatsby-cli`
 2. Install the dependencies

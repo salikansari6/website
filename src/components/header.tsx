@@ -14,7 +14,7 @@ const ThemeToggle = ({ className }: IntrinsicProps) => (
               toggleTheme(event.target.checked ? 'dark' : 'light')
             }
             checked={theme === 'dark'}
-            style={{ visibility: 'hidden' }}
+            className="invisible"
           />
           {theme === 'dark' ? (
             <Sun height="2rem" width="2rem" />

@@ -1,3 +1,4 @@
+// may require to remove later if not in use @saigita @ulhas
 exports.siteMetaData = {
   title: 'Procedure',
   description: 'class OurTeam extends YourTeam',

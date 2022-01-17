@@ -2,6 +2,13 @@ const { siteMetaData } = require('./site-metadata')
 
 module.exports = {
   siteMetadata: siteMetaData,
+  flags: {
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    DEV_WEBPACK_CACHE: true,
+    FAST_DEV: true,
+    FAST_REFRESH: true,
+    PRESERVE_WEBPACK_CACHE: true
+  },
   plugins: [
     'gatsby-plugin-typescript',
     'gatsby-plugin-postcss',

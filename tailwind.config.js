@@ -1,130 +1,21 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class',
   theme: {
-    fontFamily: {
-      inter: 'Inter',
-      satoshi: 'Satoshi'
-    },
-    typography: theme => ({
-      DEFAULT: {
-        css: {
-          fontFamily: theme('fontFamily.satoshi'),
-          fontSize: '14px',
-          lineHeight: '20px',
-          'h1, h2, h3, h4, h5, h6': {
-            fontFamily: theme('fontFamily.inter'),
-            fontWeight: 'bold',
-            color: '#000000'
-          },
-          h1: {
-            fontSize: '36px',
-            lineHeight: '48px'
-          },
-          h2: {
-            fontSize: '32px',
-            lineHeight: '40px'
-          },
-          h3: {
-            fontSize: '28px',
-            lineHeight: '36px'
-          },
-          h4: {
-            fontSize: '24px',
-            lineHeight: '32px'
-          },
-          h5: {
-            fontSize: '20px',
-            lineHeight: '28px'
-          },
-          h6: {
-            fontSize: '16px',
-            lineHeight: '24px'
-          },
-          small: {
-            fontSize: '12px',
-            lineHeight: '18px'
-          }
-        }
-      },
-      md: {
-        css: {
-          fontFamily: theme('fontFamily.satoshi'),
-          fontSize: '14px',
-          lineHeight: '20px',
-          'h1, h2, h3, h4, h5, h6': {
-            fontFamily: theme('fontFamily.inter'),
-            fontWeight: 'bold',
-            color: '#000000'
-          },
-          h1: {
-            fontSize: '32px',
-            lineHeight: '40px'
-          },
-          h2: {
-            fontSize: '28px',
-            lineHeight: '36px'
-          },
-          h3: {
-            fontSize: '24px',
-            lineHeight: '32px'
-          },
-          h4: {
-            fontSize: '20px',
-            lineHeight: '28px'
-          },
-          h5: {
-            fontSize: '16px',
-            lineHeight: '24px'
-          },
-          h6: {
-            fontSize: '14px'
-          },
-          small: {
-            fontSize: '12px',
-            lineHeight: '18px'
-          }
-        }
-      },
-      sm: {
-        css: {
-          fontFamily: theme('fontFamily.satoshi'),
-          fontSize: '14px',
-          lineHeight: '20px',
-          'h1, h2, h3, h4, h5, h6': {
-            fontFamily: theme('fontFamily.inter'),
-            fontWeight: 'bold',
-            color: '#000000'
-          },
-          h1: {
-            fontSize: '28px',
-            lineHeight: '36px'
-          },
-          h2: {
-            fontSize: '24px',
-            lineHeight: '32px'
-          },
-          h3: {
-            fontSize: '20px',
-            lineHeight: '28px'
-          },
-          h4: {
-            fontSize: '16px',
-            lineHeight: '24px'
-          },
-          h5: {
-            fontSize: '16px'
-          },
-          h6: {
-            fontSize: '14px'
-          },
-          small: {
-            fontSize: '12px',
-            lineHeight: '18px'
-          }
+    extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          sm: '2rem',
+          lg: '4rem',
+          xl: '5rem',
+          '2xl': '6rem'
         }
       }
-    }),
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -203,21 +94,76 @@ module.exports = {
         900: '#0f172a'
       }
     },
-    extend: {
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: '1rem',
-          sm: '2rem',
-          lg: '4rem',
-          xl: '5rem',
-          '2xl': '6rem'
-        }
-      }
+    fontFamily: {
+      satoshi: ['Satoshi', 'sans-serif'],
+      inter: ['Inter', 'sans-serif']
+    },
+    fontSize: {
+      display: '2.75rem',
+      '6xl': '2.25rem',
+      '5xl': '2rem',
+      '4xl': '1.75rem',
+      '3xl': '1.5rem',
+      '2xl': '1.25rem',
+      xl: '1rem',
+      body: '0.875rem',
+      sText: '0.75rem',
+      xsText: '0.625rem'
+    },
+    lineHeight: {
+      lh9: '4rem',
+      lh8: '3rem',
+      lh7: '2.25rem',
+      lh6: '2rem',
+      lh5: '1.75rem',
+      lh4: '1.5rem',
+      lh3: '1.25rem',
+      lh2: '1.125rem',
+      lh1: '1rem'
     }
   },
   variants: {
     extend: {}
   },
-  plugins: [require('@tailwindcss/typography')]
+  plugins: [
+    plugin(function ({ addBase, theme }) {
+      addBase({
+        h1: {
+          fontSize: theme('fontSize.6xl'),
+          fontFamily: theme('fontFamily.inter'),
+          lineHeight: theme('lineHeight.lh8')
+        },
+        h2: {
+          fontSize: theme('fontSize.5xl'),
+          fontFamily: theme('fontFamily.inter'),
+          lineHeight: theme('lineHeight.lh8')
+        },
+        h3: {
+          fontSize: theme('fontSize.4xl'),
+          fontFamily: theme('fontFamily.inter'),
+          lineHeight: theme('lineHeight.lh7')
+        },
+        h4: {
+          fontSize: theme('fontSize.3xl'),
+          fontFamily: theme('fontFamily.inter'),
+          lineHeight: theme('lineHeight.lh6')
+        },
+        h5: {
+          fontSize: theme('fontSize.2xl'),
+          fontFamily: theme('fontFamily.inter'),
+          lineHeight: theme('lineHeight.lh5')
+        },
+        h6: {
+          fontSize: theme('fontSize.xl'),
+          fontFamily: theme('fontFamily.inter'),
+          lineHeight: theme('lineHeight.lh4')
+        },
+        body: {
+          fontSize: theme('fontSize.body'),
+          fontFamily: theme('fontFamily.satoshi'),
+          lineHeight: theme('lineHeight.lh3')
+        }
+      })
+    })
+  ]
 }

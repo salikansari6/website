@@ -19,3 +19,17 @@ Welcome to the repository for the website of procedure.tech. The project uses Ga
 4. Once approved and merged, it will be deployed
 
 If you find any mistakes or typos, raise an issue.
+
+### Typography Information
+
+Typography Setup with Satoshi Font Done
+
+Font Classes: `font-satoshi`, `font-inter`
+
+Usable Font Weight Classes: `font-light`, `font-normal`, `font-medium`, `font-bold`, `font-black`
+
+Please use this command in the CLI before running the project
+
+```
+npx tailwindcss build ./src/styles/global.css -o public/tailwind.css
+```

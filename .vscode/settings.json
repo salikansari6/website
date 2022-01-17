@@ -1,0 +1,16 @@
+{
+  "files.associations": {
+    "* .css": "stylus"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "cSpell.words": [
+    "kpuyms",
+    "Mandrawadkar",
+    "Parens",
+    "purgecss",
+    "Satoshi",
+    "semibold",
+    "tailwindcss",
+    "Ulhas"
+  ]
+}

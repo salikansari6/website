@@ -1,8 +1,4 @@
 import React from 'react'
-import Footer from '../components/footer'
-import Header from '../components/header'
-import KeyMembers from '../components/key-members'
-import Section, { SectionProps } from '../components/section'
 
 interface IndexProps {
   data: any
@@ -13,6 +9,12 @@ const IndexPage = ({ data }: IndexProps) => (
     <main>
       <title>Procedure Website</title>
       <h1>Procedure Website </h1>
+      <h2>Procedure Website </h2>
+      <h3>Procedure Website </h3>
+      <h4>Procedure Website </h4>
+      <h5>Procedure Website </h5>
+      <h6>Procedure Website </h6>
+      <body>Procedure Website</body>
     </main>
   </div>
 )

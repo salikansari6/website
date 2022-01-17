@@ -4,9 +4,12 @@
   },
   "css.lint.unknownAtRules": "ignore",
   "cSpell.words": [
+    "commitlint",
     "kpuyms",
     "Mandrawadkar",
     "Parens",
+    "precommit",
+    "prettierrc",
     "purgecss",
     "Satoshi",
     "semibold",

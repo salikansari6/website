@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer/footer'
 
 interface IndexProps {
   data: any
@@ -16,6 +17,7 @@ const IndexPage = ({ data }: IndexProps) => (
       <h6>Procedure Website </h6>
       <body>Procedure Website</body>
     </main>
+    <Footer />
   </div>
 )
 

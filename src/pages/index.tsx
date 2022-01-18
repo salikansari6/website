@@ -1,5 +1,5 @@
 import React from 'react'
-import OurTeam from '../containers/our-team/OurTeam'
+import OurTeam from '../containers/our-team/our-team'
 
 interface IndexProps {
   data: any

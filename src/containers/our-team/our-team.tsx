@@ -1,6 +1,6 @@
 import React from 'react'
-import Display from '../../components/Display'
-import PolaroidList from '../../components/PolaroidList'
+import Display from '../../components/display'
+import PolaroidList from '../../components/polaroidList'
 
 const data = [
   {

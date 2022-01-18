@@ -127,7 +127,7 @@ module.exports = {
     extend: {}
   },
   plugins: [
-    plugin(function ({ addBase, theme }) {
+    plugin(function({ addBase, theme }) {
       addBase({
         h1: {
           fontSize: theme('fontSize.6xl'),

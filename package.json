@@ -19,6 +19,7 @@
     "pre-commit": "lint-staged"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.2",
     "gatsby": "^4.4.0",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-drift": "^1.0.0",

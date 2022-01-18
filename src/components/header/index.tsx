@@ -32,7 +32,8 @@ const Header = ({ menuLinks }: HeaderProps) => {
   return (
     <Disclosure
       as="nav"
-      className={`${state.className} fixed w-screen z-[999] animated`}>
+      className={`${state.className} fixed w-screen z-[999] animated`}
+    >
       {({ open }) => (
         <>
           <NavBar open={open} menuLinks={menuLinks} />

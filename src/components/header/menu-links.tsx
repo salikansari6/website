@@ -21,7 +21,8 @@ const MenuLinks = ({ className = '', menuLinks }: MenuLinksProps) => {
           to={menuLink.link}
           key={index}
           getProps={isActive}
-          className={className}>
+          className={className}
+        >
           <h5 className="text-gray-700 font-medium px-7 py-3">
             {menuLink.name}
           </h5>

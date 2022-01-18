@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, FC } from 'react'
 import { Disclosure } from '@headlessui/react'
-import MenuLinks from './menu-links'
-import NavBar from './nav-bar'
+import NavigationMenu from '../../components/NavigationMenu'
+import NavigationBar from '../../components/NavigationBar'
 
 export interface MenuLink {
   name: string
@@ -12,7 +12,7 @@ interface HeaderProps {
   menuLinks: MenuLink[]
 }
 
-const Header = ({ menuLinks }: HeaderProps) => {
+const Header: FC<HeaderProps> = ({ menuLinks }) => {
   const [state, setState] = useState({
     className: 'bg-transparent'
   })
@@ -32,18 +32,13 @@ const Header = ({ menuLinks }: HeaderProps) => {
   return (
     <Disclosure
       as="nav"
-      className={`${state.className} fixed w-screen z-[999] animated`}
+      className={`${state.className} fixed w-screen z-[999]`}
     >
       {({ open }) => (
         <>
-          <NavBar open={open} menuLinks={menuLinks} />
+          <NavigationBar open={open} menuLinks={menuLinks} />
           <Disclosure.Panel className="sm:hidden bg-white">
-            <div className="px-2 pt-2 pb-3">
-              <MenuLinks
-                className="py-3 block border-b-2"
-                menuLinks={menuLinks}
-              />
-            </div>
+            <NavigationMenu menuLinks={menuLinks} />
           </Disclosure.Panel>
         </>
       )}

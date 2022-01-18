@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Header from '../components/header'
+import Header from '../containers/header/Header'
 
 export interface TeamPageProps {
   data: any

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const { siteMetaData } = require('./site-metadata')
 
 module.exports = {
@@ -32,6 +33,14 @@ module.exports = {
       options: {
         printRejected: true,
         tailwind: true
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
       }
     }
   ]

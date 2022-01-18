@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Link } from 'gatsby'
-import { MenuLink } from '.'
+import { MenuLink } from '../containers/header/Header'
 
-interface MenuLinksProps {
+interface NavigationMenuProps {
   className?: string
   menuLinks: MenuLink[]
 }
 
-const MenuLinks = ({ className = '', menuLinks }: MenuLinksProps) => {
+const NavigationMenu: FC<NavigationMenuProps> = ({ className, menuLinks }) => {
   const isActive = ({ isCurrent }: { isCurrent: boolean }) => {
     return isCurrent
       ? { className: `sm:border-b-2 sm:border-primary-500 ${className}` }
@@ -16,14 +16,14 @@ const MenuLinks = ({ className = '', menuLinks }: MenuLinksProps) => {
 
   return (
     <>
-      {menuLinks.map((menuLink: any, index: number) => (
+      {menuLinks.map((menuLink: MenuLink, index: number) => (
         <Link
           to={menuLink.link}
           key={index}
           getProps={isActive}
           className={className}
         >
-          <h5 className="text-gray-700 font-medium px-7 py-3">
+          <h5 className="text-gray-700 font-medium md:px-6 md:py-6 sm:px-3 sm:py-3">
             {menuLink.name}
           </h5>
         </Link>
@@ -32,4 +32,4 @@ const MenuLinks = ({ className = '', menuLinks }: MenuLinksProps) => {
   )
 }
 
-export default MenuLinks
+export default NavigationMenu

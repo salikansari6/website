@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { BaseSyntheticEvent } from 'react'
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import Sun from '../assets/images/light-sun.svg'
+import Moon from '../assets/images/dark-moon.svg'
 
-import { Moon, Sun } from '../../images'
+interface ThemeToggleProps {
+  theme: string
+  toggleTheme: (e: string) => void
+}
 
 const ThemeToggle = () => (
   <ThemeToggler>
-    {({ theme, toggleTheme }) => (
-      <label className="pl-7 py-3 cursor-pointer">
+    {({ theme, toggleTheme }: ThemeToggleProps) => (
+      <label className="cursor-pointer flex items-center pl-5">
         <input
           type="checkbox"
-          onChange={event =>
+          onChange={(event: BaseSyntheticEvent) => {
             toggleTheme(event.target.checked ? 'dark' : 'light')
-          }
+          }}
           checked={theme === 'dark'}
           className="hidden"
         />

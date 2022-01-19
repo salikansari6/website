@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 import { Link } from 'gatsby'
-import NavigationMenu from './navigationMenu'
-import ResponsiveMenuToggle from './responsiveMenuToggle'
-import ThemeToggle from './toggleTheme'
+import NavigationMenu from './navigation-menu'
+import ResponsiveMenuToggle from './responsive-menu-toggle'
+import ThemeToggle from './toggle-theme'
 import { MenuLink } from '../containers/header/header'
 import ProcedureLogo from '../assets/images/logo.svg'
 

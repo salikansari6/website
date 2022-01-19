@@ -1,7 +1,7 @@
 import React, { useEffect, useState, FC } from 'react'
 import { Disclosure } from '@headlessui/react'
-import NavigationMenu from '../../components/navigationMenu'
-import NavigationBar from '../../components/navigationBar'
+import NavigationMenu from '../../components/navigation-menu'
+import NavigationBar from '../../components/navigation-bar'
 
 export interface MenuLink {
   name: string

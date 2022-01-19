@@ -1,6 +1,6 @@
 import React from 'react'
 import Display from '../../components/display'
-import PolaroidList from '../../components/polaroidList'
+import PolaroidList from '../../components/polaroid-list'
 
 const data = [
   {
@@ -35,7 +35,7 @@ const data = [
 
 const OurTeam = () => {
   return (
-    <section>
+    <section className="py-8">
       <Display className="text-center font-bold my-6 text-gray-800">
         Our team is a mixed bag
       </Display>

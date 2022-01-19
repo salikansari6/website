@@ -28,7 +28,7 @@ src/
     |->fonts/ ->    Local Fonts Folder
     |->images/ ->   SVG Assets Folder
     |->png/ ->      PNG Assets Folder
-|   components/camelCase.tsx -> Components with no folders (camelCase)
+|   components/component-name.tsx -> Components with no folders (Kebab-Case)
 |   containers/container-name/container-name.tsx   -> Store View Sections of Pages in Containers (Kebab-Case)
 |   pages/page-name.tsx   -> Store View Sections of Pages in Containers (Kebab-Case)
 |   shared/shared-name.tsx   -> Store All Type Declaration for all files. Import them in Components, Containers, Pages etc. (Kebab-Case)

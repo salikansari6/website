@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
-import Polaroid from './Polaroid'
-import Scroller from './Scroller'
+import Polaroid from './polaroid'
+import Scroller from './scroller'
 import { isEven } from '../utils/utils'
 
 interface PolaroidData {

@@ -5,11 +5,17 @@ import Close from '../assets/images/close.svg'
 
 interface ResponsiveMenuToggleProps {
   open: boolean
+  className?: string
 }
 
-const ResponsiveMenuToggle: FC<ResponsiveMenuToggleProps> = ({ open }) => {
+const ResponsiveMenuToggle: FC<ResponsiveMenuToggleProps> = ({
+  open,
+  className
+}) => {
   return (
-    <Disclosure.Button className="flex items-center justify-center p-2 sm:hidden">
+    <Disclosure.Button
+      className={`${className} flex items-center justify-center sm:hidden`}
+    >
       {open ? <Close /> : <HamburgerMenu />}
     </Disclosure.Button>
   )

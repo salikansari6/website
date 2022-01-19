@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import RocketIcon from '../../assets/images/rocket-icon.svg'
+import RocketIcon from '../assets/images/rocket-icon.svg'
 
 const HeroSection = () => {
   return (

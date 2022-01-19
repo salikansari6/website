@@ -1,6 +1,6 @@
 import React from 'react'
-import Display from '../../components/display'
-import PolaroidList from '../../components/polaroid-list'
+import Display from '../components/display'
+import PolaroidList from '../components/polaroid-list'
 
 const data = [
   {
@@ -53,7 +53,10 @@ const OurTeam = () => {
         </div>
         <div className="basis-1/12 md:basis-1/5" />
       </div>
-      <PolaroidList polaroidData={data} />
+      <PolaroidList
+        polaroidData={data}
+        className="py-10 md:py-20 lg:pl-40 md:pl-20 pl-10"
+      />
     </section>
   )
 }

@@ -5,7 +5,7 @@ import Moon from '../assets/images/dark-moon.svg'
 
 interface ThemeToggleProps {
   theme: string
-  toggleTheme: (e: string) => void
+  toggleTheme: (event: string) => void
 }
 
 const ThemeToggle = () => (

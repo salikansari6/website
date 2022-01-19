@@ -1,10 +1,11 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
 import Header from '../containers/header'
-import OurTeam from '../containers/our-team'
-import FeatureCard from '../components/feature-card'
-import Monitor from '../assets/images/monitor.svg'
+import HeroSection from '../containers/Team/hero-section'
+import OurTeam from '../containers/Team/our-team'
+import Openings from '../containers/openings'
+import PerksAndBenefits from '../containers/perks-and-benefits'
+import { openings, perks } from '../shared/sample-data'
 
 export interface TeamPageProps {
   data: any
@@ -15,14 +16,12 @@ const TeamPage = ({ data }: TeamPageProps) => (
     <main>
       <title>Our Team</title>
       <Header menuLinks={data.site.siteMetadata.menuLinks} />
+      <HeroSection />
       <div className="py-20">
         <OurTeam />
+        <PerksAndBenefits perks={perks} />
+        <Openings openings={openings} />
       </div>
-      <FeatureCard
-        text="Get to learn, regardless of your experience, about Data Structure and Algorithms, LLD, HLD, DevOps, frontend, backend, and test engineering"
-        icon={<Monitor />}
-        title="Extensive boot camp"
-      />
     </main>
   </div>
 )

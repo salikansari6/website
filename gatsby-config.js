@@ -14,6 +14,9 @@ module.exports = {
     'gatsby-plugin-typescript',
     'gatsby-plugin-postcss',
     'gatsby-plugin-dark-mode',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-plugin-drift',
       options: {
@@ -39,8 +42,15 @@ module.exports = {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /assets/
+          include: /images\/.*\.svg/
         }
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`
       }
     }
   ]

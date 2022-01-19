@@ -55,7 +55,7 @@ const OurTeam = () => {
       </div>
       <PolaroidList
         polaroidData={data}
-        className="py-16 md:py-24 lg:pl-40 md:pl-20 pl-10"
+        className="py-10 md:py-20 lg:pl-40 md:pl-20 pl-10"
       />
     </section>
   )

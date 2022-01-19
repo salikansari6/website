@@ -13,8 +13,8 @@ interface NavigationBarProps {
 
 const NavigationBar: FC<NavigationBarProps> = ({ open, menuLinks }) => {
   return (
-    <div className="max-w-7xl mx-auto lg:px-8 px-6 py-4">
-      <div className="grid grid-flow-col">
+    <div className="max-w-7xl mx-auto lg:px-8 px-6 py-3 md:py-0">
+      <div className="grid grid-flow-col md:flex md:justify-between">
         <div className="grid-cols-2 md:hidden">
           <ResponsiveMenuToggle open={open} />
         </div>

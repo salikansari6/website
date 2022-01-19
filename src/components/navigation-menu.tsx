@@ -21,9 +21,8 @@ const NavigationMenu: FC<NavigationMenuProps> = ({ className, menuLinks }) => {
           to={menuLink.link}
           key={index}
           getProps={isActive}
-          className={className}
-        >
-          <h5 className="text-gray-700 font-medium px-4 md:px-6 md:py-6 sm:px-3 sm:py-3">
+          className={className}>
+          <h5 className="text-gray-700 lg:text-2xl md:text-xl sm:text-body font-medium lg:px-7 px-4 py-3">
             {menuLink.name}
           </h5>
         </Link>

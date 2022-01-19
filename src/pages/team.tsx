@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Header from '../containers/header/header'
+import OurTeam from '../containers/our-team/our-team'
 
 export interface TeamPageProps {
   data: any
@@ -12,6 +13,7 @@ const TeamPage = ({ data }: TeamPageProps) => (
     <main>
       <title>Our Team</title>
       <Header menuLinks={data.site.siteMetadata.menuLinks} />
+      <OurTeam />
     </main>
   </div>
 )

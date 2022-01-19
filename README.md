@@ -20,6 +20,22 @@ Welcome to the repository for the website of procedure.tech. The project uses Ga
 
 If you find any mistakes or typos, raise an issue.
 
+### Folder Structure
+
+```
+src/
+|   assets/
+    |->fonts/ ->    Local Fonts Folder
+    |->images/ ->   SVG Assets Folder
+    |->png/ ->      PNG Assets Folder
+|   components/camelCase.tsx -> Components with no folders (camelCase)
+|   containers/container-name/container-name.tsx   -> Store View Sections of Pages in Containers (Kebab-Case)
+|   pages/page-name.tsx   -> Store View Sections of Pages in Containers (Kebab-Case)
+|   shared/shared-name.tsx   -> Store All Type Declaration for all files. Import them in Components, Containers, Pages etc. (Kebab-Case)
+|   styles/styles-name.tsx   -> Custom CSS Styles (Kebab-Case)
+|   utils/utils-name.tsx     -> Util functions (Kebab-Case)
+```
+
 ### Typography Information
 
 Typography Setup with Satoshi Font Done

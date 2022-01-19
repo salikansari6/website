@@ -8,7 +8,9 @@ interface FooterMenuProps {
 }
 
 const FooterMenu: FC<FooterMenuProps> = ({ className, menuLinks }) => (
-  <div className={className}>
+  <div
+    className={`${className} flex gap-8 md:gap-12 justify-center items-center`}
+  >
     {menuLinks.map((menuLink: MenuLink, index: number) => (
       <Link
         key={index}

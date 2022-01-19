@@ -9,14 +9,19 @@ import ProcedureLogo from '../assets/images/logo.svg'
 interface NavigationBarProps {
   open: boolean
   menuLinks: MenuLink[]
+  className?: string
 }
 
-const NavigationBar: FC<NavigationBarProps> = ({ open, menuLinks }) => {
+const NavigationBar: FC<NavigationBarProps> = ({
+  open,
+  menuLinks,
+  className
+}) => {
   return (
-    <div className="max-w-7xl mx-auto lg:px-8 px-6 py-4">
-      <div className="grid grid-flow-col">
+    <div className={`${className} max-w-7xl`}>
+      <div className="grid grid-flow-col md:flex md:justify-between">
         <div className="grid-cols-2 md:hidden">
-          <ResponsiveMenuToggle open={open} />
+          <ResponsiveMenuToggle open={open} className="p-2" />
         </div>
         <div className="grid-cols-10 md:grid-cols-4 sm:py-0.5">
           <ProcedureLogo

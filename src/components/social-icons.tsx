@@ -12,7 +12,7 @@ interface SocialIconsProps {
 }
 
 const SocialIcons: FC<SocialIconsProps> = ({ items, className }) => (
-  <div className={className}>
+  <div className={`${className} flex gap-4 justify-center items-center`}>
     {items.map(({ url, icon, tooltip }: SocialItem, index: number) => (
       <div className="bg-white w-6 h-6 rounded-full" key={index}>
         <a href={url} aria-label="social profile">

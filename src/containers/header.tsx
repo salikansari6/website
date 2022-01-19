@@ -36,7 +36,11 @@ const Header: FC<HeaderProps> = ({ menuLinks }) => {
     >
       {({ open }) => (
         <>
-          <NavigationBar open={open} menuLinks={menuLinks} />
+          <NavigationBar
+            open={open}
+            menuLinks={menuLinks}
+            className="mx-auto lg:px-8 px-6 py-3 md:py-0"
+          />
           <Disclosure.Panel className="sm:hidden bg-white">
             <NavigationMenu
               menuLinks={menuLinks}

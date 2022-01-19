@@ -37,14 +37,8 @@ const Footer: FC<FooterProps> = ({ menuLinks }) => {
     <div className="bg-info-900">
       <div className="container flex flex-col items-center gap-4 py-10">
         <Logo height="32" width="130" className="h-8 w-[8.5rem]" />
-        <FooterMenu
-          menuLinks={menuLinks}
-          className="flex gap-8 md:gap-12 justify-center items-center mt-10"
-        />
-        <SocialIcons
-          className="flex gap-4 justify-center items-center mt-10"
-          items={socialLinks}
-        />
+        <FooterMenu menuLinks={menuLinks} className="mt-10" />
+        <SocialIcons className="mt-10" items={socialLinks} />
       </div>
     </div>
   )

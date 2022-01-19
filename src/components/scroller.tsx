@@ -2,7 +2,7 @@ import React, { FC, useRef, useEffect, useState } from 'react'
 
 interface ScrollerProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode
-  className: string
+  className?: string
 }
 
 const Scroller: FC<ScrollerProps> = ({ children, className, ...props }) => {

@@ -1,7 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
 import Header from '../containers/header'
+import Openings from '../containers/openings'
+import PerksAndBenefits from '../containers/perks-and-benefits'
+import { openings, perks } from '../shared/sample-data'
 import OurTeam from '../containers/our-team'
 
 export interface TeamPageProps {
@@ -15,6 +17,8 @@ const TeamPage = ({ data }: TeamPageProps) => (
       <Header menuLinks={data.site.siteMetadata.menuLinks} />
       <div className="py-20">
         <OurTeam />
+        <PerksAndBenefits perks={perks} />
+        <Openings openings={openings} />
       </div>
     </main>
   </div>

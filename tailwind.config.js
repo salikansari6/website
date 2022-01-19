@@ -8,13 +8,8 @@ module.exports = {
     extend: {
       container: {
         center: true,
-        padding: {
-          DEFAULT: '1rem',
-          sm: '2rem',
-          lg: '4rem',
-          xl: '5rem',
-          '2xl': '6rem'
-        }
+        padding: 0,
+        margin: 0
       }
     },
     colors: {
@@ -22,6 +17,7 @@ module.exports = {
       current: 'currentColor',
       white: '#ffffff',
       black: '#0b0e16',
+      background: '#E5E5E5',
       primary: {
         50: '#f8f6ff',
         100: '#f1ecff',
@@ -97,74 +93,70 @@ module.exports = {
     },
     fontFamily: {
       satoshi: ['Satoshi', 'sans-serif'],
-      inter: ['Inter', 'sans-serif']
+      inter: ['Inter', 'sans-serif'],
+      inkFree: ['Ink Free', 'sans-serif']
     },
     fontSize: {
-      display: '2.75rem',
-      '6xl': '2.25rem',
-      '5xl': '2rem',
-      '4xl': '1.75rem',
-      '3xl': '1.5rem',
-      '2xl': '1.25rem',
-      xl: '1rem',
-      body: '0.875rem',
-      sText: '0.75rem',
-      xsText: '0.625rem'
+      display: '2.75rem', //44px
+      '6xl': '2.25rem', //36px
+      '5xl': '2rem', //32px
+      '4xl': '1.75rem', //28px
+      '3xl': '1.5rem', //24px
+      '2xl': '1.25rem', //20px
+      xl: '1rem', //16px
+      body: '0.875rem', //14px
+      sText: '0.75rem', //12px
+      xsText: '0.625rem' //10px
     },
     lineHeight: {
-      lh9: '4rem',
-      lh8: '3rem',
-      lh7: '2.25rem',
-      lh6: '2rem',
-      lh5: '1.75rem',
-      lh4: '1.5rem',
-      lh3: '1.25rem',
-      lh2: '1.125rem',
-      lh1: '1rem'
+      lh9: '4rem', //64px
+      lh8: '3rem', //48px
+      lh7: '2.25rem', //36px
+      lh6: '2rem', //32px
+      lh5: '1.75rem', //28px
+      lh4: '1.5rem', //24px
+      lh3: '1.25rem', //20px
+      lh2: '1.125rem', //18px
+      lh1: '1rem' //16px
     }
   },
   variants: {
     extend: {}
   },
   plugins: [
-    plugin(function ({ addBase, theme }) {
+    plugin(function ({ addBase, theme, addUtilities }) {
       addBase({
         h1: {
-          fontSize: theme('fontSize.6xl'),
-          fontFamily: theme('fontFamily.inter'),
-          lineHeight: theme('lineHeight.lh8')
+          fontFamily: theme('fontFamily.inter')
         },
         h2: {
-          fontSize: theme('fontSize.5xl'),
-          fontFamily: theme('fontFamily.inter'),
-          lineHeight: theme('lineHeight.lh8')
+          fontFamily: theme('fontFamily.inter')
         },
         h3: {
-          fontSize: theme('fontSize.4xl'),
-          fontFamily: theme('fontFamily.inter'),
-          lineHeight: theme('lineHeight.lh7')
+          fontFamily: theme('fontFamily.inter')
         },
         h4: {
-          fontSize: theme('fontSize.3xl'),
-          fontFamily: theme('fontFamily.inter'),
-          lineHeight: theme('lineHeight.lh6')
+          fontFamily: theme('fontFamily.inter')
         },
         h5: {
-          fontSize: theme('fontSize.2xl'),
-          fontFamily: theme('fontFamily.inter'),
-          lineHeight: theme('lineHeight.lh5')
+          fontFamily: theme('fontFamily.inter')
         },
         h6: {
-          fontSize: theme('fontSize.xl'),
-          fontFamily: theme('fontFamily.inter'),
-          lineHeight: theme('lineHeight.lh4')
+          fontFamily: theme('fontFamily.inter')
         },
         body: {
-          fontSize: theme('fontSize.body'),
-          fontFamily: theme('fontFamily.satoshi'),
-          lineHeight: theme('lineHeight.lh3')
+          fontFamily: theme('fontFamily.satoshi')
         }
-      })
+      }),
+        addUtilities({
+          '.no-scrollbar': {
+            '-ms-overflow-style': 'none',
+            scrollbarWidth: 'none'
+          },
+          '.no-scrollbar::-webkit-scrollbar': {
+            display: 'none'
+          }
+        })
     })
   ]
 }

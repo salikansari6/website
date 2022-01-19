@@ -2,6 +2,11 @@
 exports.siteMetaData = {
   title: 'Procedure',
   description: 'class OurTeam extends YourTeam',
+  menuLinks: [
+    { name: 'Work', link: '/work' },
+    { name: 'Blog', link: '/blog' },
+    { name: 'Our Team', link: '/team' }
+  ],
   keyMembers: [
     {
       name: '👱🏻‍♂️ Ulhas Mandrawadkar',

@@ -8,10 +8,11 @@ interface SocialItem {
 
 interface SocialIconsProps {
   items: SocialItem[]
+  className?: string
 }
 
-const SocialIcons: FC<SocialIconsProps> = ({ items }) => (
-  <div className="flex gap-4 justify-center items-center mt-10">
+const SocialIcons: FC<SocialIconsProps> = ({ items, className }) => (
+  <div className={className}>
     {items.map(({ url, icon, tooltip }: SocialItem, index: number) => (
       <div className="bg-white w-6 h-6 rounded-full" key={index}>
         <a href={url} aria-label="social profile">

@@ -35,14 +35,14 @@ const data = [
 
 const OurTeam = () => {
   return (
-    <section className="py-8">
+    <section>
       <Display className="text-center font-bold my-6 text-gray-800">
         Our team is a mixed bag
       </Display>
       <div className="inline-flex">
         <div className="basis-1/12 md:basis-1/5" />
         <div className="basis-5/6 md:basis-3/5">
-          <h4 className="text-center text-xl leading-lh4 md:text-2xl md:leading-lh3 lg:text-3xl lg:leading-lh6 text-gray-600">
+          <h4 className="text-center text-xl leading-lh4 md:text-2xl md:leading-lh5 lg:text-3xl lg:leading-lh6 text-gray-600">
             Of the smart and the hard-workers. Of the organised and slightly
             chaotic. Of the early risers and the burners of the midnight oil. We
             appreciate diversity and truly like having differing perspectives in

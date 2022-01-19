@@ -4,6 +4,7 @@
   },
   "css.lint.unknownAtRules": "ignore",
   "cSpell.words": [
+    "Bookclub",
     "commitlint",
     "headlessui",
     "kpuyms",

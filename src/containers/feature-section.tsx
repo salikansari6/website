@@ -1,23 +1,12 @@
 import React, { FC } from 'react'
-import FeatureCard, { FeatureCardProps } from '../components/feature-card'
+import FeatureCards from '../components/feature-card'
+import { FeatureList } from '../shared/sample-data'
 
-interface FeatureSectionProps {
-  data: FeatureCardProps[]
-  className: string
-}
-
-const FeatureSection: FC<FeatureSectionProps> = ({ data, className }) => (
-  <div className={`${className}`}>
-    {data.map(({ icon, title, text }: FeatureCardProps, index: number) => (
-      <FeatureCard
-        key={index}
-        text={text}
-        icon={icon}
-        title={title}
-        className="flex flex-col p-6"
-      />
-    ))}
-  </div>
+const FeatureSection: FC = () => (
+  <FeatureCards
+    data={FeatureList}
+    className="md:grid md:grid-rows-2 md:grid-flow-col block md:px-28 px-8"
+  />
 )
 
 export default FeatureSection

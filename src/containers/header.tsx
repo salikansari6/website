@@ -32,7 +32,7 @@ const Header: FC<HeaderProps> = ({ menuLinks }) => {
   return (
     <Disclosure
       as="nav"
-      className={`${state.className} fixed w-screen z-[999]`}
+      className={`${state.className} fixed w-screen z-[999] py-3`}
     >
       {({ open }) => (
         <>

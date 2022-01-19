@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import NavigationMenu from './navigation-menu'
 import ResponsiveMenuToggle from './responsive-menu-toggle'
 import ThemeToggle from './toggle-theme'
-import { MenuLink } from '../containers/header/header'
+import { MenuLink } from '../containers/header'
 import ProcedureLogo from '../assets/images/logo.svg'
 
 interface NavigationBarProps {

@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Header from '../containers/header/header'
-import OurTeam from '../containers/our-team/our-team'
+import Header from '../containers/header'
+import OurTeam from '../containers/our-team'
 
 export interface TeamPageProps {
   data: any
@@ -13,7 +13,9 @@ const TeamPage = ({ data }: TeamPageProps) => (
     <main>
       <title>Our Team</title>
       <Header menuLinks={data.site.siteMetadata.menuLinks} />
-      <OurTeam />
+      <div className="py-20">
+        <OurTeam />
+      </div>
     </main>
   </div>
 )

@@ -18,10 +18,10 @@ const TeamPage = ({ data }: TeamPageProps) => (
     <main>
       <title>Our Team</title>
       <Header menuLinks={data.site.siteMetadata.menuLinks} />
-      <HeroSection />
       <div className="py-20">
-        <OurTeam />
-        <FeatureSection />
+        <HeroSection />
+        <OurTeam className="md:py-20" />
+        <FeatureSection className="md:px-28 px-8" />
         <PerksAndBenefits perks={perks} />
         <Openings openings={openings} />
       </div>

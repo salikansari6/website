@@ -2,10 +2,14 @@ import React, { FC } from 'react'
 import FeatureCards from '../components/feature-card'
 import { FeatureList } from '../shared/sample-data'
 
-const FeatureSection: FC = () => (
+interface FeatureSectionProps {
+  className?: string
+}
+
+const FeatureSection: FC<FeatureSectionProps> = ({ className }) => (
   <FeatureCards
     data={FeatureList}
-    className="md:grid md:grid-rows-2 md:grid-flow-col block md:px-28 px-8"
+    className={`${className} md:grid md:grid-rows-2 md:grid-flow-col block`}
   />
 )
 

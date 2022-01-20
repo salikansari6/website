@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Display from '../components/display'
 import PolaroidList from '../components/polaroid-list'
 
@@ -33,10 +33,16 @@ const data = [
   }
 ]
 
-const OurTeam = () => {
+interface OurTeamProps {
+  className?: string
+}
+
+const OurTeam: FC<OurTeamProps> = ({ className }) => {
   return (
     <section>
-      <Display className="text-center font-bold my-6 text-gray-800">
+      <Display
+        className={`${className} text-center font-bold my-6 text-gray-800`}
+      >
         Our team is a mixed bag
       </Display>
       <div className="inline-flex">

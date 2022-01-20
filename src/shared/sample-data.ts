@@ -76,14 +76,14 @@ export const FeatureList = [
     text: 'Get to learn, regardless of your experience, about Data Structure and Algorithms, LLD, HLD, DevOps, frontend, backend, and test engineering'
   },
   {
-    icon: calendar,
-    title: 'P1, the half-yearly tech conference',
-    text: "Here's where we explore futuristic themes to keep you informed about what's happening in the tech space outside our office"
-  },
-  {
     icon: project,
     title: 'Internal projects',
     text: 'Where your craft, experiment, and learning take precedence over deadlines. also, try out new technologies and domains'
+  },
+  {
+    icon: calendar,
+    title: 'P1, the half-yearly tech conference',
+    text: "Here's where we explore futuristic themes to keep you informed about what's happening in the tech space outside our office"
   },
   {
     icon: book,

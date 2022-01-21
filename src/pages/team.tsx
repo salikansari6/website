@@ -6,6 +6,7 @@ import OurTeam from '../containers/Team/our-team'
 import Openings from '../containers/openings'
 import PerksAndBenefits from '../containers/perks-and-benefits'
 import { openings, perks } from '../shared/sample-data'
+import Testimonial from '../components/testimonial'
 
 export interface TeamPageProps {
   data: any
@@ -20,6 +21,7 @@ const TeamPage = ({ data }: TeamPageProps) => (
       <div className="py-20">
         <OurTeam />
         <PerksAndBenefits perks={perks} />
+        <Testimonial />
         <Openings openings={openings} />
       </div>
     </main>

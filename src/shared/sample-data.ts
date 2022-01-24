@@ -91,3 +91,34 @@ export const FeatureList = [
     text: 'Broaden your horizons by picking up a book every month'
   }
 ]
+
+export const polaroidData = [
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  },
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  },
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  },
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  },
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  },
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  },
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  }
+]

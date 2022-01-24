@@ -4,6 +4,7 @@ import Header from '../containers/header'
 import HeroSection from '../containers/hero-section'
 import OurTeam from '../containers/our-team'
 import Openings from '../containers/openings'
+import Testimonial from '../components/testimonial'
 import PerksAndBenefits from '../containers/perks-and-benefits'
 import Advantages from '../containers/advantages'
 import Footer from '../containers/footer'
@@ -23,6 +24,7 @@ const TeamPage = ({ data }: TeamPageProps) => (
         <OurTeam />
         <Advantages advantages={advantages} />
         <PerksAndBenefits perks={perks} />
+        <Testimonial />
         <Openings openings={openings} />
       </div>
       <Footer menuLinks={data.site.siteMetadata.menuLinks} />

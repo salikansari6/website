@@ -4,10 +4,12 @@ import Header from '../containers/header'
 import HeroSection from '../containers/hero-section'
 import OurTeam from '../containers/our-team'
 import Openings from '../containers/openings'
+import Testimonial from '../components/testimonial'
 import PerksAndBenefits from '../containers/perks-and-benefits'
-import Footer from '../containers/footer'
+import Advantages from '../containers/advantages'
 import FeatureSection from '../containers/feature-section'
-import { openings, perks } from '../shared/sample-data'
+import Footer from '../containers/footer'
+import { openings, perks, advantages } from '../shared/sample-data'
 
 export interface TeamPageProps {
   data: any
@@ -20,9 +22,11 @@ const TeamPage = ({ data }: TeamPageProps) => (
       <Header menuLinks={data.site.siteMetadata.menuLinks} />
       <div className="py-20">
         <HeroSection />
-        <OurTeam className="md:py-20" />
-        <FeatureSection className="md:px-28 px-8" />
+        <OurTeam />
+        <FeatureSection className="md:px-28 px-8" rootClass="md:py-28 py-12" />
+        <Advantages advantages={advantages} />
         <PerksAndBenefits perks={perks} />
+        <Testimonial />
         <Openings openings={openings} />
       </div>
       <Footer menuLinks={data.site.siteMetadata.menuLinks} />

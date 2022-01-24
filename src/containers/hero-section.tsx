@@ -4,7 +4,7 @@ import RocketIcon from '../assets/images/rocket-icon.svg'
 
 const HeroSection = () => {
   return (
-    <div className="bg-[url('/images/team-hero.svg')] bg-center bg-no-repeat pb-40">
+    <div className="bg-team-hero-pattern bg-center bg-no-repeat mb-32 pb-40">
       <div className="max-w-7xl mx-auto">
         <div className="pb-8 sm:pb-16 lg:pb-28 xl:pb-32 md:pb-8 lg:max-w-2xl lg:w-full">
           <main className="pt-24 px-6 lg:px-8 lg:pt-64 sm:pt-32">

@@ -6,6 +6,9 @@ import puzzle from '../assets/png/puzzle.png'
 import sideGigs from '../assets/png/side-gigs.png'
 import healthInsurance from '../assets/png/health-insurance.png'
 import sponsoredTraining from '../assets/png/sponsored-trainings.png'
+import Travel from '../assets/png/travel-front.png'
+import Boy from '../assets/png/boy-front.png'
+import Chart from '../assets/png/chart-front.png'
 
 export const openings = [
   {
@@ -62,5 +65,26 @@ export const perks = [
   {
     icon: sponsoredTraining,
     text: 'Sponsored training'
+  }
+]
+
+export const advantages = [
+  {
+    text: "You will be involved in all stages of a product lifecycle. You'll never have to wonder why you are working on something because you'll always know it.",
+    borderColor: 'border-danger-300',
+    backgroundColor: 'bg-danger-100',
+    image: Travel
+  },
+  {
+    text: 'We carefully select our clients. This is to ensure we are always indexed well on challenging work.',
+    borderColor: 'border-success-300',
+    backgroundColor: 'bg-success-100',
+    image: Boy
+  },
+  {
+    text: ' They include indie entrepreneurs, Series B/C funded startups and big corporates. Some of the sectors we are working on include Healthtech, Edtech, Insurtech, Sportstech and Fintech.',
+    borderColor: 'border-primary-300',
+    backgroundColor: 'bg-primary-100',
+    image: Chart
   }
 ]

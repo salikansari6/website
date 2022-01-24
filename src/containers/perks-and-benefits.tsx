@@ -7,7 +7,7 @@ export interface PerksAndBenefitsProps {
 
 const PerksAndBenefits: FC<PerksAndBenefitsProps> = ({ perks }) => {
   return (
-    <section className="mx-8 py-10 lg:pb-11 lg:mx-32 lg:pt-32">
+    <section className="px-8 py-10 lg:pb-11 lg:px-32 lg:pt-32">
       <p className="text-center self-center w-full text-4xl font-bold mb-10 lg:mb-20 text-gray-800">
         Perks and benefits
       </p>

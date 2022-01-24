@@ -5,8 +5,9 @@ import HeroSection from '../containers/hero-section'
 import OurTeam from '../containers/our-team'
 import Openings from '../containers/openings'
 import PerksAndBenefits from '../containers/perks-and-benefits'
+import Advantages from '../containers/advantages'
 import Footer from '../containers/footer'
-import { openings, perks } from '../shared/sample-data'
+import { openings, perks, advantages } from '../shared/sample-data'
 
 export interface TeamPageProps {
   data: any
@@ -20,6 +21,7 @@ const TeamPage = ({ data }: TeamPageProps) => (
       <HeroSection />
       <div className="py-20">
         <OurTeam />
+        <Advantages advantages={advantages} />
         <PerksAndBenefits perks={perks} />
         <Openings openings={openings} />
       </div>

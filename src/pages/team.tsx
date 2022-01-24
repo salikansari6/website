@@ -5,6 +5,7 @@ import HeroSection from '../containers/hero-section'
 import OurTeam from '../containers/our-team'
 import Openings from '../containers/openings'
 import PerksAndBenefits from '../containers/perks-and-benefits'
+import Footer from '../containers/footer'
 import { openings, perks } from '../shared/sample-data'
 
 export interface TeamPageProps {
@@ -22,6 +23,7 @@ const TeamPage = ({ data }: TeamPageProps) => (
         <PerksAndBenefits perks={perks} />
         <Openings openings={openings} />
       </div>
+      <Footer menuLinks={data.site.siteMetadata.menuLinks} />
     </main>
   </div>
 )

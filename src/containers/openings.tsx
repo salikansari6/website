@@ -14,10 +14,16 @@ const Openings: FC<OpeningsProps> = ({ openings }) => {
       </p>
       <div className="flex flex-col gap-y-[18px] mb-36">
         {openings.map((x, index) => (
-          <PositionCard key={index} title={x.title} tags={x.tags} url={x.url} />
+          <PositionCard
+            key={index}
+            title={x.title}
+            tags={x.tags}
+            url={x.url}
+            className="py-2 px-4 md:px-8 md:py-4"
+          />
         ))}
       </div>
-      <OpeningsCTA />
+      <OpeningsCTA className="p-6 md:p-10 mb-24" />
     </div>
   )
 }

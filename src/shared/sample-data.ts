@@ -64,3 +64,56 @@ export const perks = [
     text: 'Sponsored training'
   }
 ]
+
+export const testimonials = [
+  {
+    name: 'Ankit',
+    title: 'Product',
+    url: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80',
+    testimonial:
+      '“Working at Procedure helped me ‘create’ a career for myself in product & technology. Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.”',
+    startYear: '2018',
+    prevDesignation: 'Joined Procedure as an intern',
+    currDesignation: 'Leads product for a project'
+  },
+  {
+    name: 'Ulhas',
+    title: 'Product',
+    url: 'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    testimonial:
+      '“Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.”',
+    startYear: '2018',
+    prevDesignation: 'Joined Procedure as an intern',
+    currDesignation: 'Leads product for a project'
+  },
+  {
+    name: 'Salik',
+    title: 'Product',
+    url: 'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    testimonial:
+      '“Working at Procedure helped me It’d be a completely different story if it were not for the support and the number of chances I got.”',
+    startYear: '2018',
+    prevDesignation: 'Joined Procedure as an intern',
+    currDesignation: 'Leads product for a project'
+  },
+  {
+    name: 'Rizwan',
+    title: 'Product',
+    url: 'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    testimonial:
+      '“career for myself in product & technology. Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.”',
+    startYear: '2018',
+    prevDesignation: 'Joined Procedure as an intern',
+    currDesignation: 'Leads product for a project'
+  },
+  {
+    name: 'Saista',
+    title: 'Product',
+    url: 'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    testimonial:
+      '“& technology. Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.”',
+    startYear: '2021',
+    prevDesignation: 'Joined Procedure as an intern',
+    currDesignation: 'Leads product for a project'
+  }
+]

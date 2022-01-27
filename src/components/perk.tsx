@@ -3,12 +3,13 @@ import React, { FC } from 'react'
 export interface PerkProps extends React.HTMLAttributes<HTMLDivElement> {
   icon: string
   text: string
+  className?: string
 }
 
-const Perk: FC<PerkProps> = ({ icon, text, ...props }) => {
+const Perk: FC<PerkProps> = ({ icon, text, className, ...props }) => {
   return (
     <div
-      className="col-span-1 md:col-span-3 text-center flex flex-col items-center"
+      className={`${className} col-span-1 md:col-span-3 text-center flex flex-col items-center`}
       {...props}
     >
       <img src={icon} alt="icon" className="mb-4 w-16 h-16 md:w-24 md:h-24" />

@@ -1,9 +1,15 @@
 import React, { FC } from 'react'
 import Email from '../assets/images/email.svg'
 
-const OpeningsCTA: FC = () => {
+interface OpeningCtaProps {
+  className?: string
+}
+
+const OpeningsCTA: FC<OpeningCtaProps> = ({ className }) => {
   return (
-    <div className="flex flex-col md:flex-row p-6 md:p-10 align-middle rounded-lg bg-white justify-between items-start md:items-center drop-shadow-md mb-24 border border-gray-300">
+    <div
+      className={`${className} flex flex-col md:flex-row align-middle rounded-lg bg-white justify-between items-start md:items-center drop-shadow-md border border-gray-300`}
+    >
       <div className="mb-6 md:mb-0">
         <h1 className="font-bold text-gray-800 text-2xl md:text-6xl">
           Could’nt find your job role?

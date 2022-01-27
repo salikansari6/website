@@ -1,10 +1,10 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import RocketIcon from '../../assets/images/rocket-icon.svg'
+import RocketIcon from '../assets/images/rocket-icon.svg'
 
 const HeroSection = () => {
   return (
-    <div className="bg-[url('/images/team-hero.svg')] bg-center bg-no-repeat mb-32 pb-40">
+    <div className="bg-team-hero-pattern bg-center bg-no-repeat mb-32 pb-40">
       <div className="max-w-7xl mx-auto">
         <div className="pb-8 sm:pb-16 lg:pb-28 xl:pb-32 md:pb-8 lg:max-w-2xl lg:w-full">
           <main className="pt-24 px-6 lg:px-8 lg:pt-64 sm:pt-32">
@@ -21,7 +21,8 @@ const HeroSection = () => {
                 <Link
                   to="/"
                   className="font-inter bg-primary-600 flex items-center justify-center px-8 py-3 border 
-                                border-transparent font-bold rounded-lg text-white sm:py-3 md:text-lg md:px-4 shadow-lg">
+                                border-transparent font-bold rounded-lg text-white sm:py-3 md:text-lg md:px-4 shadow-lg"
+                >
                   <RocketIcon /> <span className="pl-2">Open Positions</span>
                 </Link>
               </div>

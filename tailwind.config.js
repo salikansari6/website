@@ -10,6 +10,9 @@ module.exports = {
         center: true,
         padding: 0,
         margin: 0
+      },
+      backgroundImage: {
+        'team-hero-pattern': "url('/images/team-hero.svg')"
       }
     },
     colors: {

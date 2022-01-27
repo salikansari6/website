@@ -10,9 +10,10 @@ interface PolaroidData {
 
 interface PolaroidListProps {
   polaroidData: PolaroidData[]
+  className?: string
 }
 
-const PolaroidList: FC<PolaroidListProps> = ({ polaroidData }) => {
+const PolaroidList: FC<PolaroidListProps> = ({ polaroidData, className }) => {
   const polaroidList = polaroidData.map((item, index) => {
     const rotation = isEven(index) ? 'rotate-6' : '-rotate-6'
     return (
@@ -27,7 +28,9 @@ const PolaroidList: FC<PolaroidListProps> = ({ polaroidData }) => {
 
   return (
     <>
-      <Scroller className="flex overflow-x-scroll scroll-smooth no-scrollbar py-16 md:py-24 flex-nowrap lg:pl-40 md:pl-20 pl-10">
+      <Scroller
+        className={`${className} flex overflow-x-scroll scroll-smooth no-scrollbar flex-nowrap`}
+      >
         {polaroidList}
       </Scroller>
     </>

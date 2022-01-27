@@ -6,6 +6,9 @@ import puzzle from '../assets/png/puzzle.png'
 import sideGigs from '../assets/png/side-gigs.png'
 import healthInsurance from '../assets/png/health-insurance.png'
 import sponsoredTraining from '../assets/png/sponsored-trainings.png'
+import Travel from '../assets/png/travel-front.png'
+import Boy from '../assets/png/boy-front.png'
+import Chart from '../assets/png/chart-front.png'
 
 export const openings = [
   {

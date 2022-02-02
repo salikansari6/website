@@ -27,13 +27,11 @@ const PolaroidList: FC<PolaroidListProps> = ({ polaroidData, className }) => {
   })
 
   return (
-    <>
-      <Scroller
-        className={`${className} flex overflow-x-scroll scroll-smooth no-scrollbar flex-nowrap`}
-      >
-        {polaroidList}
-      </Scroller>
-    </>
+    <Scroller
+      className={`${className} flex overflow-x-scroll scroll-smooth no-scrollbar flex-nowrap`}
+    >
+      {polaroidList}
+    </Scroller>
   )
 }
 

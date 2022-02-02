@@ -1,37 +1,7 @@
 import React from 'react'
 import Display from '../components/display'
 import PolaroidList from '../components/polaroid-list'
-
-const data = [
-  {
-    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
-    title: 'Office-Mumbai'
-  },
-  {
-    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
-    title: 'Office-Mumbai'
-  },
-  {
-    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
-    title: 'Office-Mumbai'
-  },
-  {
-    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
-    title: 'Office-Mumbai'
-  },
-  {
-    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
-    title: 'Office-Mumbai'
-  },
-  {
-    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
-    title: 'Office-Mumbai'
-  },
-  {
-    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
-    title: 'Office-Mumbai'
-  }
-]
+import { polaroidData } from '../shared/sample-data'
 
 const OurTeam = () => {
   return (
@@ -54,7 +24,7 @@ const OurTeam = () => {
         <div className="basis-1/12 md:basis-1/5" />
       </div>
       <PolaroidList
-        polaroidData={data}
+        polaroidData={polaroidData}
         className="py-10 md:py-20 lg:pl-40 md:pl-20 pl-10"
       />
     </section>

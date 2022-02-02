@@ -7,6 +7,7 @@ import Openings from '../containers/openings'
 import Testimonial from '../components/testimonial'
 import PerksAndBenefits from '../containers/perks-and-benefits'
 import Advantages from '../containers/advantages'
+import FeatureSection from '../containers/feature-section'
 import Footer from '../containers/footer'
 import { openings, perks, advantages } from '../shared/sample-data'
 
@@ -19,9 +20,10 @@ const TeamPage = ({ data }: TeamPageProps) => (
     <main>
       <title>Our Team</title>
       <Header menuLinks={data.site.siteMetadata.menuLinks} />
-      <HeroSection />
       <div className="py-20">
+        <HeroSection />
         <OurTeam />
+        <FeatureSection className="md:px-28 px-8" rootClass="md:py-28 py-12" />
         <Advantages advantages={advantages} />
         <PerksAndBenefits perks={perks} />
         <Testimonial />

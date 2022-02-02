@@ -1,0 +1,23 @@
+{
+  "files.associations": {
+    "* .css": "stylus"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "cSpell.words": [
+    "Bookclub",
+    "commitlint",
+    "headlessui",
+    "kpuyms",
+    "Mandrawadkar",
+    "organised",
+    "Parens",
+    "precommit",
+    "prettierrc",
+    "purgecss",
+    "Satoshi",
+    "Scroller",
+    "semibold",
+    "tailwindcss",
+    "Ulhas"
+  ]
+}

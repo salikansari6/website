@@ -6,6 +6,10 @@ import puzzle from '../assets/png/puzzle.png'
 import sideGigs from '../assets/png/side-gigs.png'
 import healthInsurance from '../assets/png/health-insurance.png'
 import sponsoredTraining from '../assets/png/sponsored-trainings.png'
+import monitor from '../assets/png/monitor.png'
+import calendar from '../assets/png/calendar.png'
+import project from '../assets/png/project.png'
+import book from '../assets/png/book.png'
 import Travel from '../assets/png/travel-front.png'
 import Boy from '../assets/png/boy-front.png'
 import Chart from '../assets/png/chart-front.png'
@@ -65,6 +69,60 @@ export const perks = [
   {
     icon: sponsoredTraining,
     text: 'Sponsored training'
+  }
+]
+
+export const FeatureList = [
+  {
+    icon: monitor,
+    title: 'Extensive boot camp',
+    text: 'Get to learn, regardless of your experience, about Data Structure and Algorithms, LLD, HLD, DevOps, frontend, backend, and test engineering'
+  },
+  {
+    icon: project,
+    title: 'Internal projects',
+    text: 'Where your craft, experiment, and learning take precedence over deadlines. also, try out new technologies and domains'
+  },
+  {
+    icon: calendar,
+    title: 'P1, the half-yearly tech conference',
+    text: "Here's where we explore futuristic themes to keep you informed about what's happening in the tech space outside our office"
+  },
+  {
+    icon: book,
+    title: 'Bookclub',
+    text: 'Broaden your horizons by picking up a book every month'
+  }
+]
+
+export const polaroidData = [
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  },
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  },
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  },
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  },
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  },
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
+  },
+  {
+    imageSrc: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174',
+    title: 'Office-Mumbai'
   }
 ]
 

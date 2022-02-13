@@ -3,7 +3,7 @@ import FooterMenu from '../components/footer-menu'
 import SocialIcons from '../components/social-icons'
 import Logo from '../assets/images/logo-white.svg'
 import Github from '../assets/images/github.svg'
-import { MenuLink } from '../containers/header'
+import { MenuLink } from './header'
 
 export interface FooterProps {
   menuLinks: MenuLink[]

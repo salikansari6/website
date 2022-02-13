@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import NavigationMenu from './navigation-menu'
 import ResponsiveMenuToggle from './responsive-menu-toggle'
 import ThemeToggle from './toggle-theme'
-import { MenuLink } from '../containers/header'
+import { MenuLink } from '../layout/header'
 import ProcedureLogo from '../assets/images/logo.svg'
 
 interface NavigationBarProps {
@@ -18,12 +18,12 @@ const NavigationBar: FC<NavigationBarProps> = ({
   className
 }) => {
   return (
-    <div className={`${className} max-w-7xl`}>
+    <div className={`${className} max-w-7xl p-4`}>
       <div className="grid grid-flow-col md:flex md:justify-between">
         <div className="grid-cols-2 md:hidden">
-          <ResponsiveMenuToggle open={open} className="p-2" />
+          <ResponsiveMenuToggle open={open} className="pt-2" />
         </div>
-        <div className="grid-cols-10 md:grid-cols-4 sm:py-0.5">
+        <div className="grid-cols-10 md:grid-cols-4 sm:py-0.5 -ml-8 md:ml-0">
           <ProcedureLogo
             width="168"
             height="40"

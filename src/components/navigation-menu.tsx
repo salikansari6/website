@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { Link } from 'gatsby'
-import { MenuLink } from '../containers/header'
+import { MenuLink } from '../layout/header'
 
 interface NavigationMenuProps {
   className?: string

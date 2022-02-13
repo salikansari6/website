@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Header from '../containers/header'
+import DefaultLayout from '../layout/default-layout'
 import HeroSection from '../containers/hero-section'
 import OurTeam from '../containers/our-team'
 import Openings from '../containers/openings'
@@ -8,7 +8,6 @@ import Testimonial from '../components/testimonial'
 import PerksAndBenefits from '../containers/perks-and-benefits'
 import Advantages from '../containers/advantages'
 import FeatureSection from '../containers/feature-section'
-import Footer from '../containers/footer'
 import { openings, perks, advantages } from '../shared/sample-data'
 
 export interface TeamPageProps {
@@ -19,8 +18,7 @@ const TeamPage = ({ data }: TeamPageProps) => (
   <div className="prose">
     <main>
       <title>Our Team</title>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} />
-      <div className="py-20">
+      <DefaultLayout menuLinks={data.site.siteMetadata.menuLinks}>
         <HeroSection />
         <OurTeam />
         <FeatureSection className="md:px-28 px-8" rootClass="md:py-28 py-12" />
@@ -28,8 +26,7 @@ const TeamPage = ({ data }: TeamPageProps) => (
         <PerksAndBenefits perks={perks} />
         <Testimonial />
         <Openings openings={openings} />
-      </div>
-      <Footer menuLinks={data.site.siteMetadata.menuLinks} />
+      </DefaultLayout>
     </main>
   </div>
 )

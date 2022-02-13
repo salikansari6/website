@@ -32,14 +32,14 @@ const Header: FC<HeaderProps> = ({ menuLinks }) => {
   return (
     <Disclosure
       as="nav"
-      className={`${state.className} fixed w-screen z-[999] py-3`}
+      className={`${state.className} fixed w-screen z-[999]`}
     >
       {({ open }) => (
         <>
           <NavigationBar
             open={open}
             menuLinks={menuLinks}
-            className="mx-auto lg:px-8 px-6 py-3 md:py-0"
+            className="mx-auto"
           />
           <Disclosure.Panel className="sm:hidden bg-white">
             <NavigationMenu

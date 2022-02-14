@@ -1,4 +1,8 @@
 import React, { FC } from 'react'
+import Display from '../components/display'
+import MainWrapper from '../components/main-wrapper'
+import MaxWidthWrapper from '../components/max-width-wrapper'
+import { perksAndBenefitsClass } from '../styles'
 import Perk, { PerkProps } from '../components/perk'
 
 export interface PerksAndBenefitsProps {
@@ -6,18 +10,18 @@ export interface PerksAndBenefitsProps {
 }
 
 const PerksAndBenefits: FC<PerksAndBenefitsProps> = ({ perks }) => {
+  const { mainContainer, title, perkList } = perksAndBenefitsClass
   return (
-    <section className="px-8 py-10 lg:pb-11 lg:px-32 lg:pt-32">
-      <p className="text-center self-center w-full text-4xl font-bold mb-10 lg:mb-20 text-gray-800">
-        Perks and benefits
-      </p>
-
-      <div className="grid grid-cols-3 md:grid-cols-12 gap-x-4 gap-y-8 lg:gap-y-20">
-        {perks.map((perk: PerkProps, index: React.Key | null | undefined) => (
-          <Perk icon={perk.icon} text={perk.text} key={index} />
-        ))}
-      </div>
-    </section>
+    <MainWrapper className={mainContainer}>
+      <MaxWidthWrapper>
+        <Display className={title}>Perks and Benefits</Display>
+        <div className={perkList}>
+          {perks.map((perk: PerkProps, index: React.Key | null | undefined) => (
+            <Perk icon={perk.icon} text={perk.text} key={index} />
+          ))}
+        </div>
+      </MaxWidthWrapper>
+    </MainWrapper>
   )
 }
 

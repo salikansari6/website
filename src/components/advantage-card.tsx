@@ -22,7 +22,7 @@ const AdvantageCard: FC<AdvantageCardProps> = ({
           <img src={image} alt="icon" className="w-fit h-fit" />
         </div>
       </div>
-      <p className="col-span-4 text-body leading-lh3 md:text-xl md:leading-lh4 font-inter font-normal text-gray-500 text-center">
+      <p className="col-span-4 text-body leading-lh3 md:text-xl md:leading-lh4 font-normal text-gray-500 text-center">
         {text}
       </p>
     </div>

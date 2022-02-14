@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 interface DisplayProps extends React.HTMLAttributes<HTMLDivElement> {
-  children: string
+  children: ReactNode
   className?: string
 }
 

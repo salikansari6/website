@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import RocketIcon from '../assets/images/rocket-icon.svg'
 import BuildingTeam from '../assets/images/building-team.svg'
-import HeroWrapper from '../components/hero-wrapper'
+import MainWrapper from '../components/main-wrapper'
 import MaxWidthWrapper from '../components/max-width-wrapper'
 import { heroSectionClass } from '../styles'
 
@@ -20,7 +20,7 @@ const HeroSection = () => {
     image
   } = heroSectionClass
   return (
-    <HeroWrapper className={heroSectionWrapper}>
+    <MainWrapper className={heroSectionWrapper}>
       <MaxWidthWrapper className={heroSectionGrid}>
         <div className={leftGridItemContainer}>
           <h3 className={leftHeading}>
@@ -41,7 +41,7 @@ const HeroSection = () => {
           <BuildingTeam className={image} />
         </div>
       </MaxWidthWrapper>
-    </HeroWrapper>
+    </MainWrapper>
   )
 }
 

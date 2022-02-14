@@ -149,6 +149,9 @@ module.exports = {
         },
         body: {
           fontFamily: theme('fontFamily.satoshi')
+        },
+        p: {
+          fontFamily: theme('fontFamily.satoshi')
         }
       }),
         addUtilities({

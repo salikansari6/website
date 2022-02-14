@@ -13,7 +13,7 @@ const Perk: FC<PerkProps> = ({ icon, text, className, ...props }) => {
       {...props}
     >
       <img src={icon} alt="icon" className="mb-4 w-16 h-16 md:w-24 md:h-24" />
-      <p className="text-gray-700 md:text-2xl leading-lh3 md:leading-lh5">
+      <p className="text-gray-700 text-body md:text-2xl leading-lh3 md:leading-lh5">
         {text}
       </p>
     </div>

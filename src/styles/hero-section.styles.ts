@@ -2,7 +2,7 @@ import { StylesProps } from '../shared'
 
 const heroSectionClass: StylesProps = {
   heroSectionWrapper:
-    "bg-[url('../assets/backgrounds/team-hero.svg')] bg-no-repeat h-[853px] w-full bg-cover pt-5 sm:pt-24 xl:pt-0",
+    "bg-[url('../assets/backgrounds/team-hero.svg')] bg-no-repeat xl:h-[853px] h-full w-full bg-cover pt-5 sm:pt-24 xl:pt-0",
   heroSectionGrid:
     'grid xl:grid-flow-col grid-flow-row xl:grid-cols-2 xl:col-span-6 col-span-full gap-8 xl:gap-[7.5rem] xl:px-2 px-8 relative h-full w-full pt-16 sm:pt-10 xl:pt-0',
   leftGridItemContainer: 'm-auto',

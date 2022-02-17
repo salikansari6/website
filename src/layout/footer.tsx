@@ -12,23 +12,19 @@ export interface FooterProps {
 const socialLinks = [
   {
     icon: <Github />,
-    url: 'https://github.com/raveracker',
-    tooltip: 'Github'
+    url: 'https://github.com/raveracker'
   },
   {
     icon: <Github />,
-    url: 'https://github.com/raveracker',
-    tooltip: 'Github'
+    url: 'https://github.com/raveracker'
   },
   {
     icon: <Github />,
-    url: 'https://github.com/raveracker',
-    tooltip: 'Github'
+    url: 'https://github.com/raveracker'
   },
   {
     icon: <Github />,
-    url: 'https://github.com/raveracker',
-    tooltip: 'Github'
+    url: 'https://github.com/raveracker'
   }
 ]
 

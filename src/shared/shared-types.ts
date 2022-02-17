@@ -3,6 +3,6 @@ export type ClassNameProps = string
 export type StylesProps = Record<string, string>
 
 export interface WrapperProps {
-  className?: string
+  className?: ClassNameProps
   children?: React.ReactNode
 }

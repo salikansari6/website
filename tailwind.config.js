@@ -13,6 +13,9 @@ module.exports = {
       },
       backgroundImage: {
         'team-hero-pattern': "url('/images/team-hero.svg')"
+      },
+      boxShadow: {
+        card: ' rgba(17, 17, 26, 0.1) 0px 0px 16px'
       }
     },
     colors: {
@@ -127,7 +130,7 @@ module.exports = {
     extend: {}
   },
   plugins: [
-    plugin(function ({ addBase, theme, addUtilities }) {
+    plugin(function ({ addBase, theme, addUtilities, addVariant, e }) {
       addBase({
         h1: {
           fontFamily: theme('fontFamily.inter')
@@ -161,7 +164,24 @@ module.exports = {
           },
           '.no-scrollbar::-webkit-scrollbar': {
             display: 'none'
+          },
+          '.backface-visible': {
+            'backface-visibility': 'visible'
+          },
+          '.backface-hidden': {
+            'backface-visibility': 'hidden'
+          },
+          '.testimonial-shadow': {
+            'box-shadow':
+              'rgba(158, 123, 254, 1) 0px 0px 0px 5px, rgba(241, 236, 255, 1) 0px 0px 0px 12px'
           }
+        }),
+        addVariant('label-checked', ({ modifySelectors, separator }) => {
+          modifySelectors(({ className }) => {
+            const eClassName = e(`label-checked${separator}${className}`) // escape class
+            const yourSelector = 'input[type="radio"]' // your input selector. Could be any
+            return `${yourSelector}:checked ~ .${eClassName}` // ~ - CSS selector for siblings
+          })
         })
     })
   ]

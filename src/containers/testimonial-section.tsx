@@ -12,12 +12,68 @@ const Testimonial: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
   const ref = useRef<HTMLUListElement>(null)
 
+  const MIDDLE = Math.floor((testimonials.length - 1) / 2)
+  const MIDDLE_GAP = 5
+
+  const [testimonialsUI, setTestimonialsUI] = useState(
+    testimonials.map((person, index) => {
+      return {
+        ...person,
+        positionX:
+          index <= MIDDLE
+            ? index * Math.floor(100 / testimonials.length)
+            : index * Math.floor(100 / testimonials.length) + MIDDLE_GAP,
+        customIdx: index
+      }
+    })
+  )
+
+  const moveAvatarsToLeft = (clickIdx: number) => {
+    console.log(clickIdx - MIDDLE)
+    setTestimonialsUI(prev =>
+      prev.map((t, index) => {
+        return {
+          ...t,
+          positionX:
+            index - (clickIdx - MIDDLE) >= 0
+              ? prev[index - (clickIdx - MIDDLE)].positionX
+              : prev[prev.length + (index - (clickIdx - MIDDLE))].positionX,
+          customIdx:
+            index - (clickIdx - MIDDLE) >= 0
+              ? prev[index - (clickIdx - MIDDLE)].customIdx
+              : prev[prev.length + (index - (clickIdx - MIDDLE))].customIdx
+        }
+      })
+    )
+  }
+
+  console.log(testimonialsUI)
+
+  const moveAvatarsToRight = (clickIdx: number) => {
+    setTestimonialsUI(prev =>
+      prev.map((t, index) => {
+        const shiftIndex = (index + (MIDDLE - clickIdx)) % prev.length
+        return {
+          ...t,
+          positionX: prev[shiftIndex].positionX,
+          customIdx: prev[shiftIndex].customIdx
+        }
+      })
+    )
+  }
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement>,
-    index: number
+    clickIdx: number
   ) => {
-    console.log(e, index)
-    setSelectedIndex(index)
+    console.log(e, clickIdx)
+    // setSelectedIndex(index)
+
+    if (clickIdx <= MIDDLE) {
+      moveAvatarsToRight(clickIdx)
+    } else {
+      moveAvatarsToLeft(clickIdx)
+    }
   }
 
   return (
@@ -26,30 +82,42 @@ const Testimonial: React.FC = () => {
         <Display className="text-center font-bold pb-10 md:pb-20 text-gray-800">
           Our happy employees
         </Display>
-        <MainWrapper className="mx-auto">
+        <MainWrapper className="mx-auto w-9/12 h-48">
           <ul
-            className="flex items-center justify-center overflow-x-scroll scroll-smooth no-scrollbar py-10 flex-nowrap "
+            className="flex items-center relative h-full justify-center overflow-x-scroll scroll-smooth no-scrollbar py-10 flex-nowrap "
             ref={ref}
           >
-            {testimonials.map((testimonial, index) => {
+            {testimonialsUI.map((testimonial, index) => {
               return (
-                <li key={index}>
+                <li
+                  key={index}
+                  className={`transition-all duration-1000 absolute flex`}
+                  style={{ left: `${testimonial.positionX}%` }}
+                >
                   <input
                     type="radio"
                     id={`avatar-${index}`}
                     name="avatar"
                     className="hidden"
-                    onChange={event => handleChange(event, index)}
+                    onChange={event =>
+                      handleChange(event, testimonial.customIdx)
+                    }
                   />
                   <label htmlFor={`avatar-${index}`} className="cursor-pointer">
                     <Avatar
                       key={index}
                       src={testimonial?.image}
                       altText={index}
-                      className="pr-4 md:px-7 lg:px-9 xl:px-7"
-                      checked={index === selectedIndex}
+                      className="md:px-7 lg:px-9 xl:px-7"
+                      checked={testimonial.customIdx === MIDDLE}
                     />
                   </label>
+                  {testimonial.customIdx === MIDDLE && (
+                    <div className="pl-0 lg:pl-4 xl:pl-6">
+                      <p className="font-bold">{testimonial.name}</p>
+                      <p>{testimonial.designation}</p>
+                    </div>
+                  )}
                 </li>
               )
             })}

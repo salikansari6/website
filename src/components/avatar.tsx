@@ -21,7 +21,7 @@ const Avatar: FC<AvatarProps> = ({
     <MainWrapper className={className}>
       <div
         className={`${avatarStyle} ${
-          checked && 'testimonial-shadow scale-110'
+          checked && 'testimonial-shadow scale-105 md:scale-150'
         } w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 overflow-hidden transition-all duration-200 ease-in-out rounded-full`}
       >
         <img

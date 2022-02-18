@@ -6,6 +6,9 @@ import Avatar from '../components/avatar'
 import StepIndicator, { StepProps } from '../components/step-indicator'
 import { calculateStepPosition } from '../utils/utils'
 import { testimonials } from '../shared/sample-data'
+import Particles from 'react-tsparticles'
+
+import { confettiOptions } from '../shared/confettiConfig'
 
 const Testimonial: React.FC = () => {
   const testimonialData: StepProps[] = testimonials[0].journey
@@ -70,14 +73,14 @@ const Testimonial: React.FC = () => {
   }
 
   return (
-    <MainWrapper>
+    <MainWrapper className="relative overflow-hidden pb-20">
       <MaxWidthWrapper>
         <Display className="text-center font-bold pb-10 md:pb-20 text-gray-800">
           Our happy employees
         </Display>
         <MainWrapper className="mx-auto  w-9/12 h-48 overflow-hidden">
           <ul
-            className="flex  items-center h-full justify-center overflow-x-scroll scroll-smooth no-scrollbar py-10 flex-nowrap "
+            className="flex items-center h-full justify-center overflow-x-scroll scroll-smooth no-scrollbar py-10 flex-nowrap "
             ref={ref}
           >
             {testimonialsUI.map((testimonial, index) => {
@@ -116,6 +119,11 @@ const Testimonial: React.FC = () => {
             })}
           </ul>
         </MainWrapper>
+        <Particles
+          id="tsparticles"
+          className="absolute top-1/2 left-0 right-0 bottom-0 -z-10 bg-gradient-to-b from-transparent to-primary-100"
+          options={confettiOptions as any}
+        />
         <MainWrapper className="w-9/12 mx-auto">
           <MainWrapper className="rounded-xl bg-white shadow-card overflow-hidden">
             <h5 className="text-2xl leading-lh5 p-8">

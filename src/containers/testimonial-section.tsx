@@ -9,7 +9,6 @@ import { testimonials } from '../shared/sample-data'
 
 const Testimonial: React.FC = () => {
   const testimonialData: StepProps[] = testimonials[0].journey
-  const [selectedIndex, setSelectedIndex] = useState<number>(0)
   const ref = useRef<HTMLUListElement>(null)
 
   const MIDDLE = Math.floor((testimonials.length - 1) / 2)
@@ -29,7 +28,6 @@ const Testimonial: React.FC = () => {
   )
 
   const moveAvatarsToLeft = (clickIdx: number) => {
-    console.log(clickIdx - MIDDLE)
     setTestimonialsUI(prev =>
       prev.map((t, index) => {
         return {
@@ -47,8 +45,6 @@ const Testimonial: React.FC = () => {
     )
   }
 
-  console.log(testimonialsUI)
-
   const moveAvatarsToRight = (clickIdx: number) => {
     setTestimonialsUI(prev =>
       prev.map((t, index) => {
@@ -63,12 +59,9 @@ const Testimonial: React.FC = () => {
   }
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
+    _: React.ChangeEvent<HTMLInputElement>,
     clickIdx: number
   ) => {
-    console.log(e, clickIdx)
-    // setSelectedIndex(index)
-
     if (clickIdx <= MIDDLE) {
       moveAvatarsToRight(clickIdx)
     } else {
@@ -82,16 +75,16 @@ const Testimonial: React.FC = () => {
         <Display className="text-center font-bold pb-10 md:pb-20 text-gray-800">
           Our happy employees
         </Display>
-        <MainWrapper className="mx-auto w-9/12 h-48">
+        <MainWrapper className="mx-auto  w-9/12 h-48 overflow-hidden">
           <ul
-            className="flex items-center relative h-full justify-center overflow-x-scroll scroll-smooth no-scrollbar py-10 flex-nowrap "
+            className="flex  items-center h-full justify-center overflow-x-scroll scroll-smooth no-scrollbar py-10 flex-nowrap "
             ref={ref}
           >
             {testimonialsUI.map((testimonial, index) => {
               return (
                 <li
                   key={index}
-                  className={`transition-all duration-1000 absolute flex`}
+                  className={`transition-all duration-300 absolute flex`}
                   style={{ left: `${testimonial.positionX}%` }}
                 >
                   <input

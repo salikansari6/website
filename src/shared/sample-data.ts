@@ -210,5 +210,113 @@ export const testimonials = [
       { year: '2018', content: 'Joined Procedure as an intern' },
       { year: 'Today', content: 'Leads product for a project' }
     ]
+  },
+  {
+    name: 'John Doe',
+    designation: 'CEO',
+    image:
+      'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    content:
+      'Working at Procedure helped me ‘create’ a career for myself in product & technology. Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.',
+    journey: [
+      { year: '2018', content: 'Joined Procedure as an intern' },
+      { year: 'Today', content: 'Leads product for a project' }
+    ]
+  },
+  {
+    name: 'John Doe',
+    designation: 'CEO',
+    image:
+      'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    content:
+      'Working at Procedure helped me ‘create’ a career for myself in product & technology. Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.',
+    journey: [
+      { year: '2018', content: 'Joined Procedure as an intern' },
+      { year: 'Today', content: 'Leads product for a project' }
+    ]
+  },
+  {
+    name: 'John Doe',
+    designation: 'CEO',
+    image:
+      'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    content:
+      'Working at Procedure helped me ‘create’ a career for myself in product & technology. Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.',
+    journey: [
+      { year: '2018', content: 'Joined Procedure as an intern' },
+      { year: 'Today', content: 'Leads product for a project' }
+    ]
+  },
+  {
+    name: 'John Doe',
+    designation: 'CEO',
+    image:
+      'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    content:
+      'Working at Procedure helped me ‘create’ a career for myself in product & technology. Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.',
+    journey: [
+      { year: '2018', content: 'Joined Procedure as an intern' },
+      { year: 'Today', content: 'Leads product for a project' }
+    ]
+  },
+  {
+    name: 'John Doe',
+    designation: 'CEO',
+    image:
+      'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    content:
+      'Working at Procedure helped me ‘create’ a career for myself in product & technology. Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.',
+    journey: [
+      { year: '2018', content: 'Joined Procedure as an intern' },
+      { year: 'Today', content: 'Leads product for a project' }
+    ]
+  },
+  {
+    name: 'John Doe',
+    designation: 'CEO',
+    image:
+      'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    content:
+      'Working at Procedure helped me ‘create’ a career for myself in product & technology. Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.',
+    journey: [
+      { year: '2018', content: 'Joined Procedure as an intern' },
+      { year: 'Today', content: 'Leads product for a project' }
+    ]
+  },
+  {
+    name: 'John Doe',
+    designation: 'CEO',
+    image:
+      'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    content:
+      'Working at Procedure helped me ‘create’ a career for myself in product & technology. Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.',
+    journey: [
+      { year: '2018', content: 'Joined Procedure as an intern' },
+      { year: 'Today', content: 'Leads product for a project' }
+    ]
+  },
+  {
+    name: 'John Doe',
+    designation: 'CEO',
+    image:
+      'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    content:
+      'Working at Procedure helped me ‘create’ a career for myself in product & technology. Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.',
+    journey: [
+      { year: '2018', content: 'Joined Procedure as an intern' },
+      { year: 'Today', content: 'Leads product for a project' }
+    ]
+  },
+  {
+    name: 'John Doe',
+    designation: 'CEO',
+    image:
+      'https://media.istockphoto.com/photos/african-american-graduate-student-studying-from-home-during-covid19-picture-id1300821206?s=612x612',
+    content:
+      'Working at Procedure helped me ‘create’ a career for myself in product & technology. Maybe a story for aspiring product folks who currently have no clue how to get started. It’d be a completely different story if it were not for the support and the number of chances I got.',
+    journey: [
+      { year: '2018', content: 'Joined Procedure as an intern' },
+      { year: 'Today', content: 'Leads product for a project' }
+    ]
   }
 ]
